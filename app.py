@@ -17,14 +17,15 @@ def get_version() -> str:
 class PredictionRequest(BaseModel):
     value: float
 
-# Health Check Endpoint
+# Health Check Endpoint (Version 1.1.0)
 @app.get("/health")
 def health_check():
-    # Returns the health status, application name, and version
+    # Returns status, application name, application version, and model version
     return {
         "status": "healthy",
         "application": "student-ml-api",
-        "version": get_version()
+        "application_version": get_version(),
+        "model_version": "model-1"
     }
 
 # Prediction Endpoint
