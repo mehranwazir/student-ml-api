@@ -4,7 +4,7 @@
 **Student ID / Roll No:** [Your Roll Number]  
 **Course:** Advanced MLOps  
 **Date:** September 2026  
-**GitHub Repository:** `https://github.com/<your-username>/student-ml-api`  
+**GitHub Repository:** `https://github.com/mehranwazir/student-ml-api`  
 
 ---
 
@@ -118,7 +118,7 @@ git commit -m "feat: add prediction endpoint and health check"
 git commit -m "test: add API unit tests for health and prediction"
 
 # 4. Push feature branch to GitHub remote
-git remote add origin https://github.com/<your-username>/student-ml-api.git
+git remote add origin https://github.com/mehranwazir/student-ml-api.git
 git push -u origin feature/prediction-api
 ```
 
@@ -392,10 +392,10 @@ We proved that the container can be pulled and run on any machine without rebuil
 docker rmi student-ml-api:1.0.0
 
 # 2. Pull image directly from registry
-docker pull ghcr.io/<your-username>/student-ml-api:1.0.0
+docker pull ghcr.io/mehranwazir/student-ml-api:1.0.0
 
 # 3. Run container
-docker run -d --name student-ml-api-prod -p 5000:5000 ghcr.io/<your-username>/student-ml-api:1.0.0
+docker run -d --name student-ml-api-prod -p 5000:5000 ghcr.io/mehranwazir/student-ml-api:1.0.0
 
 # 4. Verify API response
 curl http://localhost:5000/health
@@ -460,7 +460,7 @@ docker stop student-ml-api-prod
 docker rm student-ml-api-prod
 
 # Immediately launch version 1.0.0 from container registry
-docker run -d --name student-ml-api-prod -p 5000:5000 ghcr.io/<your-username>/student-ml-api:1.0.0
+docker run -d --name student-ml-api-prod -p 5000:5000 ghcr.io/mehranwazir/student-ml-api:1.0.0
 
 # Verify restoration
 curl http://localhost:5000/health
@@ -478,7 +478,7 @@ curl http://localhost:5000/health
 | Stage | Artifact / Identifier | Example Value |
 |---|---|---|
 | **Pull Request** | PR Number | `#2` |
-| **Merge Commit** | Git Commit SHA | `92f4abc` |
+| **Merge Commit** | Git Commit SHA | `8bfd13f` |
 | **Git Tag** | Semantic Tag | `v1.1.0` |
 | **Docker Image Tag** | Registry Tag | `student-ml-api:1.1.0` |
 | **Docker Image Digest** | Immutable Content Hash | `sha256:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855` |
