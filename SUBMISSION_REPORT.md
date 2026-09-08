@@ -1,7 +1,8 @@
 # MLOps Assignment 1: Professional CI Workflow with Pull Requests, Docker, and Container Registry
 
-**Student Name:** [Your Name]  
-**Student ID / Roll No:** [Your Roll Number]  
+**Student Name:** Mehran Hamayoon  
+**Roll No:** 22i-0810  
+**Section:** B  
 **Course:** Advanced MLOps  
 **Date:** September 2026  
 **GitHub Repository:** `https://github.com/mehranwazir/student-ml-api`  
